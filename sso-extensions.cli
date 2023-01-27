@@ -5,7 +5,7 @@ set DB_USERNAME="sa"
 set DB_PASSWORD="1d20563ed290bb863a7ac9a0e73ba323"
 set DB_DRIVER=com.microsoft.sqlserver.jdbc.SQLServerDriver
 set DB_XA_DRIVER=com.microsoft.sqlserver.jdbc.SQLServerXADataSource
-set DB_JDBC_URL="jdbc:mssql://server.mssql2022.svc.cluster.local/keycloak"
+set DB_JDBC_URL="jdbc:sqlserver://server.mssql2022.svc.cluster.local/keycloak"
 set DB_EAP_MODULE=org.mariadb
 
 set FILE=/opt/eap/extensions/jdbc-driver.jar
