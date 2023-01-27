@@ -6,6 +6,8 @@ set DB_PASSWORD="1d20563ed290bb863a7ac9a0e73ba323"
 set DB_DRIVER=com.microsoft.sqlserver.jdbc.SQLServerDriver
 set DB_XA_DRIVER=com.microsoft.sqlserver.jdbc.SQLServerXADataSource
 set DB_JDBC_URL="jdbc:sqlserver://server.mssql2022.svc.cluster.local:1433"
+set DB_JDBC_URL_SECURE="jdbc:sqlserver://server.mssql2022.svc.cluster.local:1433;DatabaseName=keycloak;encrypt=true;trustServerCertificate=true;"
+
 set DB_EAP_MODULE=org.mariadb
 
 set FILE=/opt/eap/extensions/jdbc-driver.jar
@@ -22,7 +24,7 @@ module add --name=$DB_EAP_MODULE --resources=$FILE --dependencies=javax.api,java
   jndi-name=java:jboss/datasources/KeycloakDS, \
   enabled=true, \
   use-java-context=true, \
-  connection-url=$DB_JDBC_URL, \
+  connection-url=$DB_JDBC_URL_SECURE, \
   driver-name=$DB_DRIVER_NAME, \
   user-name=$DB_USERNAME, \
   password=$DB_PASSWORD, \
