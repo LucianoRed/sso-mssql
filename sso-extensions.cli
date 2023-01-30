@@ -2,7 +2,7 @@ batch
 
 set DB_DRIVER_NAME=mssql
 set DB_USERNAME="sa"
-set DB_PASSWORD="Redhat123!"
+set DB_PASSWORD="Redhat123*"
 set DB_DRIVER=com.microsoft.sqlserver.jdbc.SQLServerDriver
 set DB_XA_DRIVER=com.microsoft.sqlserver.jdbc.SQLServerXADataSource
 set DB_JDBC_URL="jdbc:sqlserver://server.mssql2022.svc.cluster.local:1433"
